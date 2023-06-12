@@ -8,3 +8,8 @@ module.exports = async (interaction) => {
             await Queue.shuffleQueue(interaction.guild.id);
             interaction.editReply(':stop_button: **|** Przetasowałem piosenki.');
      }};
+
+module.exports.config = {
+    "name": "shuffle",
+    "description": "Shuffle!",
+};
