@@ -1,7 +1,7 @@
 const { getVoiceConnection } = require('@discordjs/voice');
 const Queue = require('../modules/queue.js');
 
-module.exports = async (interaction, client, success, failed) => {
+module.exports = async (interaction) => {
     // stop playing
     const connection = getVoiceConnection(interaction.guild.id);
     if (connection) {
