@@ -1,5 +1,5 @@
 const { getVoiceConnection } = require('@discordjs/voice');
-const Queue = require('../modules/queue.js');
+const Queue = require('../helper/queue.js');
 
 module.exports = async (interaction) => {
     // stop playing

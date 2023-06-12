@@ -2,7 +2,7 @@ const { joinVoiceChannel, createAudioPlayer, createAudioResource, AudioPlayerSta
 
 const ytdl = require("ytdl-core");
 const yts = require('yt-search');
-const Queue = require('../modules/queue.js');
+const Queue = require('../helper/queue.js');
 
 function setupPlayer(queueId, connection, song) {
     // Create a player
