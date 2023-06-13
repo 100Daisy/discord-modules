@@ -4,6 +4,7 @@ const ytdl = require("ytdl-core");
 const yts = require('yt-search');
 const Queue = require('../helper/queue.js');
 
+console.log(Queue)
 function setupPlayer(queueId, connection, song) {
     // Create a player
     player = createAudioPlayer();
