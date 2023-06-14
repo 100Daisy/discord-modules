@@ -2,9 +2,8 @@ const { joinVoiceChannel, createAudioPlayer, createAudioResource, AudioPlayerSta
 
 const ytdl = require("ytdl-core");
 const yts = require('yt-search');
-const Queue = require('../helper/queue.js');
+const Queue = require('/app/helper/queue.js');
 
-console.log(Queue)
 function setupPlayer(queueId, connection, song) {
     // Create a player
     player = createAudioPlayer();
@@ -52,6 +51,7 @@ async function getSong(url) {
         }
 }
 module.exports = async (interaction) => {
+    console.log(Queue)
     const queueId = interaction.guild.id;
     interaction.editReply(":mag_right: **|** Szukam piosenki...")
     getSong(interaction.options.get('piosenka').value).then(song => {
